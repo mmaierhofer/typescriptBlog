@@ -5,8 +5,8 @@ import "./App.css";
 function App() {
   return (
     <div className="w-screen h-screen">
-      <div className="h-1/5 w-full"></div>
-      <div className="w-full h-4/5">
+      <div className="h-1/6 w-full"></div>
+      <div className="w-full h-5/6">
         <Home />
       </div>
     </div>
