@@ -17,7 +17,8 @@ export default function Footer() {
             <FontAwesomeIcon icon={faEnvelope} className="h-4" color="white" />
           </div>
           <div className="mt-8 text-sm">
-            Everything on this page was written by Max Maierhofer.
+            Everything on this page was written and created by Max Maierhofer
+            using React and Storyblok.
           </div>
         </div>
       </div>
