@@ -11,7 +11,7 @@ export default function Home() {
       <div className="bg-white w-screen h-full h-min-20 pt-12">
         <div className="ml-5">Popular Posts</div>
 
-        <Swiper spaceBetween={60} slidesPerView={1.5}>
+        <Swiper spaceBetween={50} slidesPerView={1.5}>
           <SwiperSlide>
             <Preview />
           </SwiperSlide>
