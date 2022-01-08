@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { faTimes, faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Subscribe() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  if (!isVisible) {
+    return <></>;
+  }
   return (
     <>
-      <div className="w-full h-48 flex justify-center items-center mt-5 absolute bottom-5 animate-bounce-start">
+      <div className="w-full h-48 flex justify-center items-center mt-5 fixed bottom-5 animate-bounce-start z-50">
         <div className="bg-slate-800 w-11/12 h-full rounded-3xl flex flex-col items-center justify-around pb-4">
           <div className="h-6"></div>
-          <div className="absolute top-2 right-6 rounded-full border-gray-400 border h-8 w-8 text-white flex justify-center items-center">
+          <div
+            className="absolute top-2 right-6 rounded-full border-gray-400 border h-8 w-8 text-white flex justify-center items-center"
+            onClick={() => setIsVisible((prevIsVisible) => !prevIsVisible)}
+          >
             <FontAwesomeIcon icon={faTimes} color="lightgray" />
           </div>
           <div className="w-5/6 text-2xl cursor-pointer">
