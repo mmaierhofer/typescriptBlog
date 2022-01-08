@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="w-screen h-screen">
       <div className="h-1/6 w-full justify-center items-center flex flex-col pt-5">
-        <img src={logo} className="h-20" />
+        <img src={logo} className="h-20" alt="logo" />
         <div className="font-bold text-react-100 text-3xl">react-butter</div>
       </div>
       <div className="w-full h-5/6">
