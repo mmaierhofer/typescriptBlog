@@ -18,8 +18,8 @@ export default function Preview({ title, category, img }: Props) {
             backgroundPosition: "50% 50%",
           }}
         >
-          <div className="bg-white h-24 rounded-3xl w-full p-4 z-50">
-            <div className="text-gray-400 text-xs">{category}</div>
+          <div className="bg-white h-24 rounded-3xl w-full p-4 z-50 opacity-90">
+            <div className="text-gray-500 text-xs">{category}</div>
             <div className="font-bold">{title}</div>
           </div>
         </div>
