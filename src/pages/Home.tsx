@@ -44,6 +44,7 @@ export default function Home() {
               </SwiperSlide>
             );
           })}
+          <SwiperSlide></SwiperSlide>
         </Swiper>
         <div className="ml-5 mt-8">Categories</div>
         <Swiper spaceBetween={50} slidesPerView={1.5}>
@@ -58,6 +59,7 @@ export default function Home() {
               </SwiperSlide>
             );
           })}
+          <SwiperSlide></SwiperSlide>
         </Swiper>
         <Subscribe />
       </div>
