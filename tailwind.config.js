@@ -5,6 +5,11 @@ module.exports = {
       animation: {
         "bounce-start": "bounce 1s  3.5",
       },
+      colors: {
+        react: {
+          100: "#53c1de",
+        },
+      },
     },
   },
   plugins: [],
