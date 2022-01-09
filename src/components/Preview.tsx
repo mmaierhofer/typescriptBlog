@@ -1,15 +1,24 @@
 import React from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
 interface Props {
   title: string;
   category: string;
   img: string;
+  slug: string;
 }
 
-export default function Preview({ title, category, img }: Props) {
+export default function Preview({ title, category, img, slug }: Props) {
+  const navigate = useNavigate();
+
+  function onHandleRedirect() {
+    console.log(`slug ${slug}`);
+    navigate(`post/${slug}`);
+  }
+
   return (
     <>
-      <div className="p-4">
+      <div className="p-4" onClick={onHandleRedirect}>
         <div
           className="bg-orange-200 w-64 h-72 rounded-3xl flex justify-center items-end p-2"
           style={{

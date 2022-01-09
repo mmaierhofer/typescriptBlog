@@ -13,10 +13,13 @@ interface Post {
     title: string;
     image: string;
   };
+  slug: string;
 }
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
+
+  const [slideNum, setSlideNum] = useState(getSlideNum(window.screen.width));
 
   useEffect(() => {
     axios
@@ -27,12 +30,13 @@ export default function Home() {
         setPosts(response.data.stories);
       });
   }, []);
+
   return (
     <>
       <div className="bg-white w-screen h-full h-min-20 pt-12 mb-32">
         <div className="ml-5">Popular Posts</div>
 
-        <Swiper spaceBetween={50} slidesPerView={1.5}>
+        <Swiper spaceBetween={50} slidesPerView={slideNum}>
           {posts.map((post: Post) => {
             return (
               <SwiperSlide>
@@ -40,6 +44,7 @@ export default function Home() {
                   title={post.content.title}
                   category={post.content.intro}
                   img={post.content.image}
+                  slug={post.slug}
                 />
               </SwiperSlide>
             );
@@ -47,7 +52,7 @@ export default function Home() {
           <SwiperSlide></SwiperSlide>
         </Swiper>
         <div className="ml-5 mt-8">Categories</div>
-        <Swiper spaceBetween={50} slidesPerView={1.5}>
+        <Swiper spaceBetween={50} slidesPerView={slideNum}>
           {posts.map((post: Post) => {
             return (
               <SwiperSlide>
@@ -55,6 +60,7 @@ export default function Home() {
                   title={post.content.title}
                   category={post.content.intro}
                   img={post.content.image}
+                  slug={post.slug}
                 />
               </SwiperSlide>
             );
@@ -67,4 +73,14 @@ export default function Home() {
       <Footer />
     </>
   );
+}
+
+function getSlideNum(screenWidth: number) {
+  if (screenWidth < 481) {
+    return 1.5;
+  } else if (screenWidth < 1000) {
+    return 2.5;
+  } else {
+    return 5.5;
+  }
 }

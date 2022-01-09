@@ -14,7 +14,7 @@ export default function Subscribe() {
         <div className="bg-slate-800 w-11/12 h-full rounded-3xl flex flex-col items-center justify-around pb-4">
           <div className="h-6"></div>
           <div
-            className="absolute top-2 right-6 rounded-full border-gray-400 border h-8 w-8 text-white flex justify-center items-center"
+            className="absolute top-2 right-6 rounded-full border-gray-400 border h-8 w-8 text-white flex justify-center items-center md:right-12"
             onClick={() => setIsVisible((prevIsVisible) => !prevIsVisible)}
           >
             <FontAwesomeIcon icon={faTimes} color="lightgray" />

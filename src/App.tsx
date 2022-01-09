@@ -1,7 +1,9 @@
 import React from "react";
 import Home from "./pages/Home";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import logo from "./logo.png";
+import Post from "./pages/Post";
 
 function App() {
   return (
@@ -13,7 +15,12 @@ function App() {
         </div>
       </div>
       <div className="w-full h-5/6">
-        <Home />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="post/:slug" element={<Post />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );
