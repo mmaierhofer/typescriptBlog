@@ -18,12 +18,6 @@ interface Post {
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
-  const [categories, setCategories] = useState([
-    "React Basics",
-    "NextJs",
-    "React InDepth",
-    "React Hooks",
-  ]);
 
   const slideNum = getSlideNum(window.screen.width);
 
