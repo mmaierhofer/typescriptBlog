@@ -24,7 +24,7 @@ export default function Post() {
           </div>
 
           <div className="mt-5 font-bold text-xl pl-10">
-            Why you shouldn't overuse the useMemo-Hook
+            Why you shouldn't overuse the useMemo-Hooks
           </div>
           <div className="pl-10 pr-10 pt-5 text-justify">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
