@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import CodeBlock from "../components/CodeBlock";
 
 export default function Post() {
   return (
@@ -37,6 +38,7 @@ export default function Post() {
             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </div>
+          <CodeBlock />
         </div>
       </div>
     </>
