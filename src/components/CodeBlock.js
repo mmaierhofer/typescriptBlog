@@ -1,6 +1,6 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function CodeBlock() {
   const codeString = `const memoizedValue = useMemo(() => 
@@ -8,7 +8,7 @@ export default function CodeBlock() {
     );`;
   return (
     <div className="w-full p-10 text-xs">
-      <SyntaxHighlighter language="javascript" style={materialDark}>
+      <SyntaxHighlighter language="javascript" style={dark}>
         {codeString}
       </SyntaxHighlighter>
     </div>
