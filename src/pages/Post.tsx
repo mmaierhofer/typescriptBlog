@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import CodeBlock from "../components/CodeBlock";
+import TextBlock from "../components/TextBlock";
 
 export default function Post() {
   return (
@@ -27,17 +28,7 @@ export default function Post() {
           <div className="mt-5 font-bold text-xl pl-10">
             Why you shouldn't overuse the useMemo-Hook
           </div>
-          <div className="pl-10 pr-10 pt-5 text-justify">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </div>
+          <TextBlock text={""} />
           <CodeBlock />
         </div>
       </div>
