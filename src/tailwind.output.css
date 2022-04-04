@@ -552,10 +552,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .w-full {
   width: 100%;
 }
@@ -815,10 +811,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:right-12 {
     right: 3rem;
   }
-}
 
-@media (min-width: 1024px) {
-  .lg\:w-48 {
-    width: 12rem;
+  .md\:w-1\/2 {
+    width: 50%;
   }
 }
