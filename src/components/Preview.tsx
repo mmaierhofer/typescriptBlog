@@ -18,7 +18,7 @@ export default function Preview({ title, category, img, slug }: Props) {
 
   return (
     <>
-      <div className="p-4" onClick={onHandleRedirect}>
+      <div className="p-4 cursor-pointer" onClick={onHandleRedirect}>
         <div
           className="bg-orange-200 w-64 h-72 rounded-3xl flex justify-center items-end p-2"
           style={{

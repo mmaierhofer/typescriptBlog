@@ -702,8 +702,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-4 {
@@ -726,16 +726,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
 .pl-10 {
   padding-left: 2.5rem;
 }
 
 .pr-10 {
   padding-right: 2.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-center {
@@ -751,14 +751,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-2xl {

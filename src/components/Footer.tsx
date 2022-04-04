@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Footer() {
   return (
     <>
-      <div className="pb-10 bg-slate-800 w-screen relative bottom-0 flex items-center pt-5 flex-col">
+      <div className="pb-10 bg-slate-800 w-full relative bottom-0 flex items-center pt-5 flex-col">
         <img src={logo} alt="logo" className="h-12 rounded-xl w-12" />
         <div className="text-slate-300 w-1/2 text-center mt-5">
           <div>Feel free to contact me on any channel</div>
