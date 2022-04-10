@@ -78,7 +78,7 @@ export default function Post() {
                   } else if (contentItemList[0].marks[0].type === "code") {
                     return <CodeBlock code={contentItemList} />;
                   }
-                  return <>No code</>;
+                  return <></>;
                 }
               })}
             </div>
