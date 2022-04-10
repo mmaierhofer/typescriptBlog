@@ -10,7 +10,7 @@ export default function Subscribe() {
   }
   return (
     <>
-      <div className="md:w-1/2 w-full h-48 flex justify-center items-center mt-5 fixed bottom-5 animate-bounce-start z-50 ">
+      <div className="md:w-1/4 w-full h-48 flex justify-center items-center mt-5 fixed bottom-5 animate-bounce-start z-50 ">
         <div className="bg-slate-800 w-11/12 h-full rounded-3xl flex flex-col items-center justify-around pb-4">
           <div className="h-6"></div>
           <div

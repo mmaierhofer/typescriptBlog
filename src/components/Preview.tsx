@@ -29,7 +29,7 @@ export default function Preview({ title, category, img, slug }: Props) {
         >
           <div className="bg-white h-24 rounded-3xl w-full p-4 z-50 opacity-90">
             <div className="text-gray-500 text-xs">{category}</div>
-            <div className="font-bold">{title}</div>
+            <div className="font-bold text-sm">{title}</div>
           </div>
         </div>
       </div>

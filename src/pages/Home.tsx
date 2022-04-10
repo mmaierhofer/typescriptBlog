@@ -28,7 +28,7 @@ export default function Home() {
   useEffect(() => {
     axios
       .get(
-        "https://api.storyblok.com/v1/cdn/stories?token=JQlrkKngzyxOCE6cy10xQwtt"
+        "https://api.storyblok.com/v1/cdn/stories?token=tehnPlIvhoncgaNSUju5Cwtt"
       )
       .then((response: any) => {
         setPosts(response.data.stories);
