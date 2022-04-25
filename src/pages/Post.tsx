@@ -30,7 +30,7 @@ export default function Post() {
   useEffect(() => {
     axios
       .get(
-        `https://api.storyblok.com/v1/cdn/stories/${slug}?token=8BoCrozLLHoHgAffVEwy4wtt`
+        `https://api.storyblok.com/v1/cdn/stories/${slug}?token=77YcCAFQ9gK7DZuLwBE3vQtt`
       )
       .then((response: response) => {
         setTitle(response.data.story.name);

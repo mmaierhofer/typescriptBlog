@@ -8,13 +8,16 @@ import Post from "./pages/Post";
 function App() {
   return (
     <div className="h-screen">
-      <div className="h-1/6 w-full justify-center items-center flex flex-col pt-5">
-        <img src={logo} className="h-20" alt="logo" />
+      <div className="h-1/6 w-full justify-between items-center flex flex-col pt-5 bg-gray-900">
+        <img src={logo} className="h-16" alt="logo" />
         <div className="font-bold text-react-100 text-3xl">
           react-butter.com
         </div>
+        <div className="text-white text-sm">
+          The bread and butter for your React profession
+        </div>
       </div>
-      <div className="w-full h-5/6">
+      <div className="w-full h-5/6 bg-gray-900">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />

@@ -28,7 +28,7 @@ export default function Home() {
   useEffect(() => {
     axios
       .get(
-        "https://api.storyblok.com/v1/cdn/stories?token=tehnPlIvhoncgaNSUju5Cwtt"
+        "https://api.storyblok.com/v1/cdn/stories?token=77YcCAFQ9gK7DZuLwBE3vQtt"
       )
       .then((response: any) => {
         setPosts(response.data.stories);
@@ -37,9 +37,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full flex justify-center flex-row">
-        <div className="bg-white w-1/2 h-full h-min-20 pt-12 mb-32">
-          <div className="ml-5">Popular Posts</div>
+      <div className="w-full flex justify-center flex-row bg-gray-900">
+        <div className=" w-1/2 h-full h-min-20 pt-12 mb-32">
+          <div className="ml-5  text-white">Popular Posts</div>
 
           <Swiper spaceBetween={50} slidesPerView={slideNum} loop={true}>
             {posts.map((post: Post) => {
@@ -55,7 +55,7 @@ export default function Home() {
               );
             })}
           </Swiper>
-          <div className="ml-5 mt-8">Categories</div>
+          <div className="ml-5 mt-8 text-white">Categories</div>
           <Swiper spaceBetween={50} slidesPerView={slideNum} loop={true}>
             <SwiperSlide>
               <Preview
